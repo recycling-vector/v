@@ -85,6 +85,7 @@ const showMap = async () => {
     })
     map.on('mouseleave', 'places', () => {
       map.getCanvas().style.cursor = ''
+      speechSynthesis.cancel()
       popup.remove()
     })
   })
