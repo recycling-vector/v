@@ -21,3 +21,14 @@ curl -L -o docs/#{fn} https://unpkg.com/maplibre-gl@#{LIBRE_VERSION}/dist/#{fn}
     EOS
   }
 end
+
+desc 'CSV ファイルからベクトルタイルを作る'
+task :tiles do
+  sh <<-EOS
+curl #{DATA_URL} | \
+ruby togeojsons.rb | \
+tippecanoe -f --output-to-directory=docs/zxy \
+--no-tile-compression
+  EOS
+end
+

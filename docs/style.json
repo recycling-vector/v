@@ -99539,6 +99539,36 @@
         "text-halo-color": "hsla(0,0%,24%,1)",
         "text-halo-width": 1
       }
+    },
+    {
+      "id": "places",
+      "type": "symbol",
+      "source": "places",
+      "source-layer": "places",
+      "layout": {
+        "text-allow-overlap": true,
+        "text-field": "♻",
+        "text-size": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          10,
+          18,
+          100
+        ],
+        "text-font": [
+          "NotoSansCJKjp-Regular"
+        ]
+      },
+      "paint": {
+        "text-color": "#0f0"
+      }
     }
   ],
   "sources": {
@@ -99550,6 +99580,13 @@
       "maxzoom": 16,
       "minzoom": 4,
       "attribution": "<a href='https://maps.gsi.go.jp/vector/' target='_blank'>地理院地図Vector（仮称）</a>"
+    },
+    "places": {
+      "type": "vector",
+      "tiles": [
+        "http://localhost:9966/zxy/{z}/{x}/{y}.pbf"
+      ],
+      "maxzoom": 14
     }
   }
 }
