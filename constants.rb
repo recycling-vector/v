@@ -14,4 +14,4 @@ DATA_LAYER = 'places'
 DATA_N_FIELDS = 22
 DATA_TILE_MAXZOOM = 14
 DATA_TILE_MINZOOM = 9
-DATA_TILE_URL = 'http://localhost:9966/zxy/{z}/{x}/{y}.pbf'
+DATA_TILE_URL = 'https://recycling-vector.github.io/v/zxy/{z}/{x}/{y}.pbf'

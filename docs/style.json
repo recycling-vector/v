@@ -99584,7 +99584,7 @@
     "places": {
       "type": "vector",
       "tiles": [
-        "http://localhost:9966/zxy/{z}/{x}/{y}.pbf"
+        "https://recycling-vector.github.io/v/zxy/{z}/{x}/{y}.pbf"
       ],
       "maxzoom": 14
     }
